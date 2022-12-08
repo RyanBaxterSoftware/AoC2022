@@ -34,8 +34,29 @@ namespace AoC2022
         {
             string directory = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
             Day1TextBox.Text = directory;
-            string input = System.IO.File.ReadAllText(System.IO.Path.Combine(directory, "Day01Input.txt"));
-            Day1TextBox.Text = input;
+            string input = File.ReadAllText(System.IO.Path.Combine(directory, "Day01Input.txt"));
+            string[] elves = input.Split(Environment.NewLine + Environment.NewLine);
+            Day1TextBox.Text = elves.Length.ToString();
+
+            List<int> foodAmounts = new List<int>();
+
+            foreach (string elf in elves)
+            {
+                int elfFood = 0;
+                foreach (string foodItem in elf.Split(Environment.NewLine))
+                {
+                    elfFood += Int32.Parse(foodItem);
+                }
+                foodAmounts.Add(elfFood);
+                Day1TextBox.Text += Environment.NewLine + "An elf has been totaled to have " + elfFood + " calories total.";
+                Day1TextBox.Text += " Total amount of elves is " + foodAmounts.Count;
+            }
+            int largest = foodAmounts.Max();
+            Day1TextBox.Text += Environment.NewLine + "The largest amount that was found is " + largest.ToString();
+
+            foodAmounts.Sort();
+            int topThree = foodAmounts[foodAmounts.Count - 1] + foodAmounts[foodAmounts.Count - 2] + foodAmounts[foodAmounts.Count - 3];
+            Day2TextBox.Text = Environment.NewLine + "The three largest, however, total at " + topThree.ToString() + " calories.";
         }
     }
 }
