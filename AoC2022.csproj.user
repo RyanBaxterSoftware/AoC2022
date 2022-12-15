@@ -10,9 +10,21 @@
     <Compile Update="Day01Code.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Day02Code.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Day03Code.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Day01Code.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day02Code.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Day03Code.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

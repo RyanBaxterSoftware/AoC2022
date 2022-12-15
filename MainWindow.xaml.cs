@@ -30,6 +30,15 @@ namespace AoC2022
             _NavigationFrame.Navigate(new Uri("Day01Code.xaml", UriKind.Relative));
         }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            _NavigationFrame.Navigate(new Uri("Day02Code.xaml", UriKind.Relative));
+        }
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            _NavigationFrame.Navigate(new Uri("Day03Code.xaml", UriKind.Relative));
+        }
+
         private void Button_Click_Back(object sender, RoutedEventArgs e)
         {
             _NavigationFrame.Content = null;

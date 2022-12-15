@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\ryanb\source\repos\AoC2022\App.xaml
-21269943726
+4995740863
 
-6-1856152368
+9-1393802892
 194-2004305220
-Day01Code.xaml;MainWindow.xaml;
+Day01Code.xaml;Day02Code.xaml;Day03Code.xaml;MainWindow.xaml;
 
 False
 

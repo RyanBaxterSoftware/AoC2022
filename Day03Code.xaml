@@ -1,0 +1,27 @@
+﻿<Page x:Class="AoC2022.Day03Code"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AoC2022"
+      mc:Ignorable="d"
+      Title="Day03Code" Height="450" Width="680" Background="Gray">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Background" Value="Black" />
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="LightGray" Width="340" HorizontalAlignment="Left">
+            <ScrollViewer Height="410" VerticalAlignment="Top">
+                <TextBlock Name="Part1TextBlock" TextWrapping="Wrap" Text="TextBlock"  VerticalAlignment="Center" />
+            </ScrollViewer>
+        </Border>
+        <Border BorderThickness="1" BorderBrush="LightGray" Width="340" HorizontalAlignment="Right">
+            <ScrollViewer Height="410" VerticalAlignment="Top">
+                <TextBlock Name="Part2TextBlock" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" />
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</Page>
